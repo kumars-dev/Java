@@ -22,5 +22,6 @@ public class maxarray {
             }
         }
         System.out.println("max element in the array is : "+maxele);
+        max.close();
     }
 }
