@@ -23,5 +23,6 @@ public class Revarray {
         {
             System.out.println("element at " + i +" = "+ element[i]);
         }
+        rev.close();
     }
 }
