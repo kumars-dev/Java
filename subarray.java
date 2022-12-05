@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class subarray {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner subarr = new Scanner(System.in);
         System.out.println("enter the size of the array");
         int n = subarr.nextInt();
@@ -25,5 +26,7 @@ public class subarray {
             System.out.println();
         }
        }
+       subarr.close();
     }
+    
 }
