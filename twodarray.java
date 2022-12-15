@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Scanner;
 public class twodarray {
     public static void main(String[] args) {
