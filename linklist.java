@@ -1,36 +1,65 @@
 import java.util.Scanner;
 
-public class linklist {
+public class linklist
+{
     static class Node
     {
         // data member of the class
-        static int data;
+        int data;
         Node next;
+        // constructor
         Node(int data)
         {
             this.data = data;
-            this.next = next;
+            // this.next = next;
         }    
     }
     Node head = null;
         public void creation()
         {
+            int n,data;
             Scanner sc = new Scanner(System.in);
-            int data = sc.nextInt();
-            Node nodeobj = new Node(data);
-            if(head == null)
+            do
             {
-                head = nodeobj;
+               System.out.println("enter the data");
+                data = sc.nextInt();
+                Node nodeobj = new Node(data);
+                    if(head == null)
+                    {
+                        head = nodeobj;
+                    }
+                    else
+                    {
+                        nodeobj.next = head;
+                        head = nodeobj;                    
+                    }
+                    System.out.println("do you want to continue to add more node, if yes, press 1");
+                    n=sc.nextInt();
             }
-            else{
-                nodeobj.next = head;
-                head = nodeobj;
-                System.out.println(data);
+            while(n==1);
+            sc.close();
+       
+        }
+        public void traversal()
+        {
+            Node temp = head;
+           if(head ==null)
+           {
+            System.out.println("ll is not exist");
+           }
+           else
+           {
+            while(temp!=null)
+            {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
             }
+           }
         }
         public static void main(String[] args) {
           linklist obj = new linklist();
           obj.creation();
+          obj.traversal();
          }
 }
     
