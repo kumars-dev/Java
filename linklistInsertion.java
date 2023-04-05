@@ -1,6 +1,4 @@
-
 // insertion when we have only single data or static data to represent linked list
-
 public class linklistInsertion
 {
     static class Node{
@@ -18,8 +16,7 @@ public class linklistInsertion
     if(head == null)
     {
         head = newnode;
-    }
-    
+    }   
     Node temp = head;
     while (temp !=null)
     {
