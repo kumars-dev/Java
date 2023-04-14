@@ -34,7 +34,7 @@ public class linkedlistInsertionatlocation
                     k = sc.nextInt();           
         }  
         while(k==1);          
-            // below code is not executing........................
+            // Now the code is working ........................
             int n, m;
             do
             {
@@ -49,7 +49,7 @@ public class linkedlistInsertionatlocation
                     Node new_node = new Node(newdata);
                     // Node head = null;
                     Node temp = head;
-                    for(int i = 0; i<loc; i++)
+                    for(int i = 0; i<loc-1; i++)
                     {
                         temp = temp.next;
                     }
